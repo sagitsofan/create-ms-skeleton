@@ -1,0 +1,25 @@
+{
+  "name": "create-ms-skeleton",
+  "version": "1.0.35",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "start": "",
+    "test": ""
+  },
+  "files": [
+    "generator",
+    "template"
+  ],
+  "bin": {
+    "create-ms-skeleton": "./generator/index.js"
+  },
+  "author": "Sagi Tsofan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "fs-extra": "^7.0.1"
+  }
+}

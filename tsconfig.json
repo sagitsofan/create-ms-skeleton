@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "outDir": "dist",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "node_modules/@types/**/*.ts"
+    ],
+    "exclude": [
+        "typings/browser.d.ts",
+        "typings/browser",
+        "node_modules",
+        "dist",
+        "**/*.spec.ts"    
+    ],
+    "compileOnSave": false
+}
