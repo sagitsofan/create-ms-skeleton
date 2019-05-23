@@ -3,4 +3,4 @@
 Creates a skeleton microservice in 1 line of code
 
 # Installation
-`npm init ms-skelaton <service-name>`
+`npm init ms-skeleton <service-name>`
