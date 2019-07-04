@@ -3,7 +3,7 @@ import { Container, decorate, injectable } from 'inversify';
 import {
     BaseRestService, SpecMiddleware,
     LoggerService, BaseDbConnection,
-    VaultService, ConfigurationService, BaseORMConnection
+    VaultV2Service, ConfigurationService, BaseORMConnection
 } from '../../shared'
 import { ExampleController } from './controllers/example.controller'
 import { ExampleApi } from './api/example.api'
@@ -25,7 +25,7 @@ export class ContainerConfig {
         // services
         container.bind<LoggerService>(LoggerService).toSelf();
         container.bind<ExampleService>(ExampleService).toSelf();
-        container.bind<VaultService>(VaultService).toSelf();
+        container.bind<VaultV2Service>(VaultV2Service).toSelf();
         container.bind<ConfigurationService>(ConfigurationService).toSelf();
 
         // controllers
