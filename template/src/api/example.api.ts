@@ -18,7 +18,7 @@ export class ExampleApi implements IRoute {
 
     /**
      * @swagger
-     * /route-exapmle:
+     * /route-example:
      *   get:
      *     tags:
      *       - search
@@ -29,6 +29,6 @@ export class ExampleApi implements IRoute {
      *       200:
      *         description: An array of meta data
      */
-    this.router.get('/routeExapmle', this.exampleController.getData)
+    this.router.get('/routeExample', this.exampleController.getData)
   }
 }

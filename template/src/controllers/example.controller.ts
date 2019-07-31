@@ -6,7 +6,7 @@ export class ExampleController {
   constructor() {
   }
 
-  getData = async (req, res, next) => {
+  public getData = async (req, res, next) => {
     try {
       next("Got it!");
     }
