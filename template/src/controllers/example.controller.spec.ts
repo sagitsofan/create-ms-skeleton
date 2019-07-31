@@ -5,7 +5,7 @@ import 'mocha';
 import { MockContainer } from '../mock/mock.container';
 import { ExampleController } from ".";
 
-describe('DashboardController', () => {
+describe('Microservice name: ExampleController', () => {
 
   const container = MockContainer.getContainer();
   const exampleController: ExampleController = container.get(ExampleController);
@@ -14,10 +14,6 @@ describe('DashboardController', () => {
 
     const req = {
       body: {
-        dashboard: "Open incidents",
-        customers: [0],
-        fromDate: "2019-07-09",
-        toDate: "2019-07-09"
       }
     }
 
