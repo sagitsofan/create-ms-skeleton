@@ -3,11 +3,13 @@ import * as configStore from 'config';
 
 import { Server } from './server/server'
 import { ExampleApi } from './api'
-import { SpecMiddleware, LoggerService, SysConst, IMicroservice, BaseORMConnection } from '../../shared'
+import { SpecMiddleware, LoggerService, SysConst, IMicroservice, BaseORMConnection, dbMigrate } from '../../shared'
 import { ContainerConfig } from './inversify.config';
 
 const container = ContainerConfig.getContainer();
 const config: IMicroservice = <IMicroservice>configStore.get('config.microservices.[MS_NAME]');
+
+dbMigrate(config.general.name, config.general.pm2Name);
 
 const server = new Server(
   container.get(ExampleApi),
